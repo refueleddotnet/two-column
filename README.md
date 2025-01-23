@@ -3,7 +3,7 @@
 Two Column by [Themepost](http://themepost.dev). Two Column is simple starter theme for Ghost.
 
 ## Live Demo
-[Live Demo](https://two-column.themeindex.link/)
+[Live Demo](https://themepost.dev/previews/two-column)
 
 ## Files to edit
 
