@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{meta_title}}</title>
+
+	<link rel="stylesheet" href="{{asset "fonts/google/stylesheet.css"}}">
+	<link rel="stylesheet" href="{{asset "fonts/fontawesome/css/all.min.css"}}">
+	<link rel="stylesheet" href="{{asset "css/screen.css"}}">
+
+	{{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+
+	<div id="page" class="hfeed site">
+
+		<header id="masthead" class="site-header">
+			<div class="branding">
+				<h1 class="site-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
+				<p class="site-description">{{@site.description}}</p>
+			</div>
+
+			<div class="header-wrapper">
+				<nav id="site-navigation" class="main-navigation">
+					<button class="menu-toggle">Menu</button>
+					{{navigation}}
+				</nav><!-- #site-navigation -->
+			</div><!-- .header-wrapper -->
+
+			{{> "header-img"}}
+		</header><!-- #masthead -->
+
+		<div id="content" class="site-content">
+
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main">
+					{{{body}}}
+				</main><!-- #main -->
+			</div><!-- #primary -->
+
+			<div id="secondary" class="widget-area">
+				<aside class="widget" id="sidebar-links">
+					<ul id="sidebar-externals">
+						{{> external-sidebar}}
+					</ul>
+				</aside>
+			</div><!-- #secondary -->
+
+		</div><!-- #content -->
+
+		<footer class="site-footer">
+			<div class="social-navigation social-links">
+			    {{navigation type="secondary"}}
+			</div>
+
+			<div class="site-info">
+				{{#unless @custom.footer_text}}
+					Powered by <a href="https://ghost.org/" target="_blank">Ghost</a> &amp; <a href="https://themepost.dev/" target="_blank">Themepost</a>
+				{{else}}
+					{{@custom.footer_text}}
+				{{/unless}}
+			</div>
+		</footer>
+	</div><!-- #page -->
+
+	{{! Ghost outputs important scripts and data with this tag }}
+	{{ghost_foot}}
+
+	{{! The main JavaScript files}}
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{{asset "js/custom.js"}}"></script>
+	<script type="text/javascript" src="{{asset "js/navigation.js"}}"></script>
+
+</body>
+</html>

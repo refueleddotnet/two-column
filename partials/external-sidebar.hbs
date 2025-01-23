@@ -1,0 +1,24 @@
+{{! External sidebar }}
+<aside class="tag-cloud widget">
+	{{#get "tags" limit="all"}}
+	<h2 class="widget-title">Tags</h2>
+		<ul class="tags">
+			{{#foreach tags}}
+				<li>
+					<a href="{{url}}">{{name}}</a>
+				</li>
+			{{/foreach}}
+		</ul>
+	{{/get}}
+</aside>
+
+<aside class="recent-posts widget">
+	{{#get "posts" limit=5 order="date_published desc"}}
+	<h2 class="widget-title">Recent Posts</h2>
+	<ul>
+	    {{#foreach posts}}
+	        <li><a href="{{url}}">{{title}}</a></li>
+	    {{/foreach}}
+	</ul>
+	{{/get}}
+</aside>
