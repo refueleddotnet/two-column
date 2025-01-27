@@ -1,9 +1,9 @@
 ## Two Column
 
-Two Column by [Themepost](http://themepost.dev). Two Column is simple starter theme for Ghost.
+Two Column by [refueled](http://refueled.net). Two Column is simple starter theme for Ghost.
 
 ## Live Demo
-[Live Demo](https://themepost.dev/previews/two-column)
+[Live Demo](https://refueled.net/previews/two-column)
 
 ## Files to edit
 
