@@ -2,9 +2,6 @@
 
 Two Column by [refueled](http://refueled.net). Two Column is simple starter theme for Ghost.
 
-## Live Demo
-[Live Demo](https://refueled.net/previews/two-column)
-
 ## Files to edit
 
  * /assets/css/screen.css
